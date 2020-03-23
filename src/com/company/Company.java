@@ -12,13 +12,10 @@ public class Company {
         this.budget = budget;
     }
 
-    public void addEmployee(String position, double ratePerHour, int workdays) {
-        employees.add(new Employee(position, ratePerHour, workdays));
+    public void addEmployee(Employee e) {
+        employees.add(e);
     }
 
-    public void addEmployee(String position, double ratePerHour, int workdays, double bonuses) {
-        employees.add(new Employee(position, ratePerHour, workdays, bonuses));
-    }
     public SalaryService getSalaryService() {
         SalaryService s = new SalaryService();
         s.pay(budget, employees);

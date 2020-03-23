@@ -13,7 +13,7 @@ public class SalaryService {
             System.out.println("The company budget is too low");
         } else {
             for(int j = 0; j < list.size(); j++) {
-            System.out.println("The salary to "+list.get(j).position+" was paid in amount of "+list.get(j).getSalary());
+            System.out.println("The salary to "+list.get(j).position+" was paid in amount of "+list.get(j).getSalary()+"$");
             }
         }
     }

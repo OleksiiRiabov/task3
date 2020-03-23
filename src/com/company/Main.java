@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Company c = new Company("Toshiba",10000.00);
-        c.addEmployee("Manager",1.1, 5);
-        c.addEmployee("Developer",2.2, 5, 10);
-        c.addEmployee("Scrum master",1.1, 5);
+        c.addEmployee(new Manager("Manager",8, 5));
+        c.addEmployee(new Developer("Developer",10, 5, 100));
+        c.addEmployee(new ScrumMaster("Scrum master",9, 5));
         c.getSalaryService();
 
     }
