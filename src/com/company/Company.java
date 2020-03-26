@@ -2,23 +2,22 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Company {
-    public String name;
-    public double budget;
-    public ArrayList<Employee> employees = new ArrayList<>();
+ class Company {
+    private String name;
+    private double budget;
+    private ArrayList<Employee> employees = new ArrayList<>();
 
-    public Company(String name, double budget) {
+    Company(String name, double budget) {
         this.name = name;
         this.budget = budget;
     }
 
-    public void addEmployee(Employee e) {
+    void addEmployee(Employee e) {
         employees.add(e);
     }
 
-    public SalaryService getSalaryService() {
+    void getSalaryService() {
         SalaryService s = new SalaryService();
-        s.pay(budget, employees);
-        return s;
+        s.pay(name, budget, employees);
     }
 }

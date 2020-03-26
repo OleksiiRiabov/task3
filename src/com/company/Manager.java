@@ -2,9 +2,12 @@ package com.company;
 
 public class Manager extends Employee {
 
-    public Manager (String position, double ratePerHour, int workdays) {
-        this.position = position;
+    Manager (double ratePerHour, int workdays) {
         this.ratePerHour = ratePerHour;
         this.workdays = workdays;
+    }
+
+    public String getPosition() {
+        return "Manager";
     }
 }

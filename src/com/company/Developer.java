@@ -3,14 +3,17 @@ package com.company;
 public class Developer extends Employee {
     private double bonuses;
 
-    public Developer (String position, double ratePerHour, int workdays, double bonuses) {
-        this.position = position;
+    Developer (double ratePerHour, int workdays, double bonuses) {
         this.ratePerHour = ratePerHour;
         this.workdays = workdays;
         this.bonuses = bonuses;
     }
-    public Developer (String position, double ratePerHour, int workdays) {
-        this(position, ratePerHour, workdays, 0.0);
+    Developer (double ratePerHour, int workdays) {
+        this(ratePerHour, workdays, 0.0);
+    }
+
+    public String getPosition() {
+        return "Developer";
     }
 
     public double getSalary() {

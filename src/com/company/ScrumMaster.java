@@ -2,9 +2,12 @@ package com.company;
 
 public class ScrumMaster extends Employee {
 
-    public ScrumMaster (String position, double ratePerHour, int workdays) {
-        this.position = position;
+    ScrumMaster (double ratePerHour, int workdays) {
         this.ratePerHour = ratePerHour;
         this.workdays = workdays;
+    }
+
+    public String getPosition() {
+        return "Scrum Master";
     }
 }
